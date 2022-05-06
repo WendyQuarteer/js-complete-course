@@ -9,8 +9,31 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
+// your code here
+document.getElementById('run').addEventListener("click", getAge);
 
-})();
+function getAge() {
+    const dateNow = new Date();
+    console.log(dateNow)
+    let yearNow = dateNow.getFullYear()
+    const DbYear = document.getElementById('dob-year').value;
+    let monthNow = dateNow.getMonth();
+    const DbMonth = document.getElementById('dob-month').value;
+    if (monthNow < DbMonth) {
+        yearNow--;
+    }
+    const dayNow = dateNow.getDay();
+    const DbDay = document.getElementById('dob-day').value;
+    if (dayNow < DbDay) {
+        monthNow--;
+    }
+    const currentYear = new Date(yearNow, monthNow, dayNow)
+    const BdayDate = new Date(DbYear, DbMonth, DbDay);
+    console.log("birthday date " + BdayDate)
+    const age = currentYear.getFullYear() - BdayDate.getFullYear()
+    console.log("calculation years: " + age)
+    let msg = ("You are " + age + " years old!")
+    alert(msg);
+}
+
