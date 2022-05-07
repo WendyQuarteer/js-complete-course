@@ -9,8 +9,20 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
+// your code here
 
-})();
+document.getElementById('run').addEventListener("click", getFridayThirteen);
+
+function getFridayThirteen() {
+    const input = document.getElementById('year').value;
+    const year = input
+    for (let month = 0; month < 11; month++) {
+        const OneThree = new Date(year, month, 13);
+        if (OneThree.getDay() === 5) {
+            const arr = ['January', 'February', 'March', 'April', 'May', 'Jun', 'July', 'August', 'September', 'October', 'November', 'December'];
+            document.write(arr[month] + " ");
+        }
+    }
+}
+
