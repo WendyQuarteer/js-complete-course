@@ -15,8 +15,7 @@
 document.getElementById('run').addEventListener("click", getFridayThirteen);
 
 function getFridayThirteen() {
-    const input = document.getElementById('year').value;
-    const year = input
+    const year = document.getElementById('year').value
     for (let month = 0; month < 11; month++) {
         const OneThree = new Date(year, month, 13);
         if (OneThree.getDay() === 5) {
