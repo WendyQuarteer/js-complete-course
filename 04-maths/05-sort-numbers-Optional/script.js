@@ -22,3 +22,5 @@ document.getElementById("run").addEventListener("click", function () {
     })
     document.write(numbers);
 });
+
+/*https://www.javascripttutorial.net/javascript-array-sort*/
