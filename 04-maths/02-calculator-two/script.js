@@ -9,16 +9,35 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-    // to get the value of an input: document.getElementById("element-id").value
-
-    var performOperation = function(operation) {
-        // perform the operation
+const performOperation = function (operation) {
+    let one = document.getElementById("op-one").value;
+    console.log(one);
+    let two = document.getElementById("op-two").value;
+    console.log(two);
+    switch (operation) {
+        case "addition":
+            let plus = parseInt(one) + parseInt(two);
+            alert("result = " + plus);
+            break;
+        case "substraction":
+            let minus = parseInt(one) - parseInt(two);
+            alert("result = " + minus);
+            break;
+        case "multiplication":
+            let multiply = parseInt(one) * parseInt(two);
+            alert("result = " + multiply);
+            break;
+        case "division":
+            let divide = parseInt(one) / parseInt(two);
+            alert("result = " + divide);
+            break;
+        default:
+            alert("input fields are empty");
     };
-
-    Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
-        $btn.addEventListener("click", function() {
-            performOperation($btn.id);
-        });
+};
+Array.from(document.querySelectorAll("button.operator")).forEach(function ($btn) {
+    $btn.addEventListener("click", function () {
+        performOperation($btn.id);
     });
-})();
+});
+
