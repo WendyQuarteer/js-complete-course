@@ -8,15 +8,19 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
-(function() {
-    
-    // to get the value of an input: document.getElementById("element-id").value
-
-    document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
-
-    });
-
-})();
+// to get the value of an input: document.getElementById("element-id").value
+// your code here
+document.getElementById("run").addEventListener("click", function () {
+    const number = parseInt(document.getElementById("number").value);
+    if (number < 0) {
+        alert("Factorial for negative number does not exist.");
+    } else if (number === 0) {
+        alert("Result is: 1");
+    } else {
+        let fact = 1;
+        for (i = 1; i <= number; i++) {
+            fact *= i;
+        }
+        alert("Result is: " + fact);
+    }
+});
