@@ -11,7 +11,7 @@
 
 (function() {
 
-    var fruits = [
+    let fruits = [
         "cerise",
         "durian",
         "pomme",
@@ -29,4 +29,8 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        let rmvDuplicate = [...new Set(fruits)];
+        console.log(rmvDuplicate);
+    })
 })();
