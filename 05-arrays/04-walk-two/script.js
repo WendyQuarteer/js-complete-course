@@ -11,7 +11,7 @@
 
 (function() {
 
-    var fruits = [
+    let fruits = [
         "pomme",
         "poire",
         "fraise",
@@ -27,5 +27,9 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function () {
+        fruits.forEach(function (value) {
+           console.log(value);
+        })
+    })
 })();
