@@ -2,8 +2,7 @@
 ## EX 01
 * Open index.html in your browser, how is the text displayed on the page?
   
-If the document.write() call is embedded within an inline HTML <script> tag, 
-  then it will not call document.open().
+document.write()
   
 * Look up the documentation for this function (hint: mdn)
 

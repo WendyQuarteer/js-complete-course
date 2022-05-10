@@ -6,7 +6,7 @@ The script is inside the body & link to a js-file
 
 * Do you notice a difference between the 2 document.write lines?
 
-The 2nd one contains a calculation (amount:2)
+The 2nd one contains a calculation (amount:2) inside a placeholder.
 
 * Look at the 'Template literals' documentation
 

@@ -2,5 +2,5 @@
 ## EX 06
 * Notice the difference with the previous exercise. What changed?
 
-return function is no longer there
+There is no more return 
 parseTitle is now inside for-each function

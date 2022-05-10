@@ -9,7 +9,14 @@ invoked. It increases the readability of the code and means less redundancy.
 
 * What does the parseTitle function do exactly?
 
-Titles will get lower cases.  If the title starts with 'the', in console will be written: 
-Film met THE: title then the title will also be UPPER-CASED.
+It is assigning to give a function(all titles lower cases) to "title"
+
+If a title starts with "the", then the console log will print the 
+text:"Film met THE:" followed by the actual title.
+and title will  be UPPER-CASED.
+
+Otherwise, the title will be lower-cased and not shown in console.log
 
 * Notice how all the code is in the shape of functions.
+
+wrapWithTag, parseTitle, createList are assigning functions.

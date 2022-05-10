@@ -17,3 +17,4 @@ const lowerCaseMovies = movies.map(movie => movie.toLowerCase());
 const wrappedMovies = lowerCaseMovies.map(movie => wrapWithTag(movie, `li`));
 
 document.write(wrapWithTag(wrappedMovies.join(''), `ol`));
+wrappedMovies.forEach( item => console.log(item))

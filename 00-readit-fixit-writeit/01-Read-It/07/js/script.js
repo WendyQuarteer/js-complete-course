@@ -14,7 +14,6 @@ const movies = [
 const wrapWithTag = (content, tagname) => `<${tagname}>${content}</${tagname}>`;
 
 const lowerCaseMovies = movies.map(movie => movie.toLowerCase());
-
 document.write(`<ol>`);
 lowerCaseMovies.forEach(movie => document.write(wrapWithTag(movie, `li`)));
 document.write(`</ol>`);
