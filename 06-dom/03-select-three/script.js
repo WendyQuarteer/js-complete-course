@@ -12,7 +12,9 @@
 
 
     // your code here
+//select all elements by classname.
 let targ = document.getElementsByClassName("target") ;
+//make sure all are selected with for-loop and replace their content.
 for (let i = 0; i < targ.length; i++) {
     targ[i].innerHTML = "owned"
 }

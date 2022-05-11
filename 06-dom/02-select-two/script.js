@@ -12,7 +12,7 @@
 
 
     // your code here
-
+//Select ID with querySelector and replace it's content.
 document.querySelector("#target").innerHTML = "owned";
 
 

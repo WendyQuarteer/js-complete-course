@@ -10,6 +10,7 @@
 // You will have time to focus on it later.
 
     // your code here
+//select ID with getElementById and change it's content.
 document.getElementById("target").innerText = "owned";
 
 

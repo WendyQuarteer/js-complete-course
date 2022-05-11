@@ -12,10 +12,21 @@
 
 
     // your code here
-let img = document.getElementById("source").dataset.image ;
-console.log(img)
-let newImg = document.createElement("img");
+//get the value of data-image attribute.
+//https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
+const img = document.getElementById("source").dataset.image ;
+console.log(img + "value of data-image attribute");
+//create a new image-element
+const newImg = document.createElement("img");
+console.log(newImg + "new element");
+//add the source of the image to the element
 newImg.src = img
+console.log(newImg.src +"new element +src");
+//The appendChild() method appends a node (element) as the last child of an element.
 //https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
 document.getElementById("target").appendChild(newImg);
-console.log(newImg)
+console.log(newImg + "new element inside Id-element");
+//remove the first element
+function removeFirst () {
+img.remove();
+}
