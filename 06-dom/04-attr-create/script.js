@@ -9,8 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+
 
     // your code here
-
-})();
+let img = document.getElementById("source").dataset.image ;
+console.log(img)
+let newImg = document.createElement("img");
+newImg.src = img
+//https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+document.getElementById("target").appendChild(newImg);
+console.log(newImg)
