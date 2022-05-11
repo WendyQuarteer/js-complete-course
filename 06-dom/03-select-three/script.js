@@ -9,8 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+
 
     // your code here
+let targ = document.getElementsByClassName("target") ;
+for (let i = 0; i < targ.length; i++) {
+    targ[i].innerHTML = "owned"
+}
 
-})();
