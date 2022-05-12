@@ -9,8 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
-
-})();
+// your code here
+// When
+document.getElementById("run").addEventListener("click", function onChange() {
+    const first = document.querySelector('input[name=pass-one]').value;
+    console.log(first);
+    const second = document.querySelector('input[name=pass-two]').value;
+    console.log(second);
+if (second !== first) {
+    console.log("not ok")
+    document.getElementById("pass-one").style.borderColor = "#FF0000";
+    document.getElementById("pass-two").style.borderColor = "#FF0000";
+} else {
+    console.log("ok")
+}
+})
