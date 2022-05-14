@@ -15,8 +15,9 @@
         getGithubData();
     })
     async function getGithubData() {
-        //await operator is used to wait for a Promise
+        //await operator is used to wait for a promise
         let data = await fetch('../../_shared/api.json');
+        //await promise to get the data
         let main = await data.json();
         console.log(main);
     }
