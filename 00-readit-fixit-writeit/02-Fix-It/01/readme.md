@@ -2,7 +2,6 @@
 ## EX 01
 * What's going wrong?
 
-The H1 should be inside the html-body.
-document.write should be inside Js <script>
+document.write should be inside Js <script> inside th html body
 
 * Make sure the title is displayed on the page.
