@@ -1,23 +1,26 @@
-const tvshows = [
-  `legion`,
-  `sneaky pete`,
-  `santa clarita diet`,
-  `riverdale`,
-  `the young pope`,
-  `a series of unfortunate events`,
-  `taboo`,
-  `colony`,
-  `24: legacy`,
-  `speechless`,
-  `scherlock`,
-  `stranger things`,
-  `this is us`,
-  `timeless`,
-  `the oa`,
+const tvShows = [
+    `legion`,
+    `sneaky pete`,
+    `santa clarita diet`,
+    `riverdale`,
+    `the young pope`,
+    `a series of unfortunate events`,
+    `taboo`,
+    `colony`,
+    `24: legacy`,
+    `speechless`,
+    `scherlock`,
+    `stranger things`,
+    `this is us`,
+    `timeless`,
+    `the oa`,
 ];
 
-document.write(`<ol>`);
-for (let i = 0; i < movies.length; i++) {
-  document.write(`<li>${movies[i]}</li>`);
-}
-document.write(`</ol>`);
+let ol = document.querySelector("ol")
+let rev = tvShows.reverse();
+rev.forEach((show) => {
+    let li = document.createElement('li');
+    li.innerText = show;
+    ol.appendChild(li);
+});
+
