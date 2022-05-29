@@ -16,7 +16,7 @@ const shows = [
   `the oa`,
 ];
 
-const wrapWithTag = (content, tagname) => `<${tagname}>${content}</${tagname}>`;
+const wrapWithTag = (content, tagName) => `<${tagName}>${content}</${tagName}>`;
 
 const writeTitle = title => {
   const newTitle = uCFirst(title);
@@ -25,7 +25,7 @@ const writeTitle = title => {
 };
 
 const uCFirst = sentence => {
-  console.log(sentence)
+  //console.log(sentence)
   let words = sentence.split(` `);
   words = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
   console.log(words)
@@ -33,6 +33,5 @@ const uCFirst = sentence => {
 };
 
 document.write(`<ol>`);
-//shows.forEach(show => writeTitle(show));
 shows.forEach(show => writeTitle(show));
 document.write(`</ol>`);
